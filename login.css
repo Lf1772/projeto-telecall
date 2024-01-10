@@ -1,0 +1,196 @@
+@import url('"https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 40vw;
+  margin: auto;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 3px;
+
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro,
+.limpa {
+  width: 15vw;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.cadastro {
+  background-color: rgb(0, 143, 0);
+}
+
+.limpa {
+  background-color: rgb(95, 95, 95);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+#header {
+
+  background-size: 55% 85%;
+  background-position: top right;
+}
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.titulocadastro {
+  color: red;
+}
+
+
+p {
+  color: blue;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   footer  */
+
+#footer {
+  padding: 50px 0 30px;
+
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #2b34b6;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left-col {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+
+.footer-right-col {
+  flex-basis: 35%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-title h4 {
+  color: #2b34b6;
+  margin-bottom: 20px;
+}
+
+.link-title small {
+  color: #777;
+  font-size: 13px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright-text,
+.footer-logo {
+  flex-basis: 40%;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo button {
+  padding: 12px 38px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1023px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+  label {
+    position: relative;
+    right: 100px;
+  }
+
+  input {
+    position: relative;
+    right: 100px;
+    width: 180px;
+  }
+
+  .limpa {
+    position: relative;
+    margin-left: 100px;
+    width: 100px;
+  }
+
+  .cadastro {
+    position: relative;
+    width: 100px;
+  }
+
+
+
+
+
+}
