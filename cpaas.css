@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 900vh;
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+
+}
+
+.FA2 {
+  margin-bottom: 600px;
+}
+
+.logo {
+  margin-right: 100px;
+  margin-left: 200px;
+  padding-top: 120px;
+}
+
+.img-inicial {
+  margin-right: 600px;
+  margin-left: 500px;
+  padding-top: 80px;
+}
+
+#dark {
+  cursor: pointer;
+}
+
+.texto1 p {
+  line-height: 18px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 270px;
+  margin-right: 500px;
+  padding-top: 10px;
+  box-shadow: 3px 0 0 #0047b3;
+}
+
+.texto1 h1 {
+  margin-left: 270px;
+  margin-right: 800px;
+}
+
+.texto2 {
+  margin-left: 270px;
+  margin-right: 700px;
+  box-shadow: 3px 0 0 #0047b3;
+}
+
+.FA2 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto3 {
+  margin-left: 270px;
+  margin-right: 700px;
+  box-shadow: 3px 0 0 #0047b3;
+
+}
+
+.texto3 h3 {
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #595959;
+}
+
+.texto4 {
+  margin-left: 750px;
+  margin-right: 100px;
+  font-size: 18px;
+  box-shadow: 3px 0 0 #0047b3;
+
+}
+
+.texto4 h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.como-faz-img h2 {
+  margin-left: 200px;
+  text-decoration: underline;
+}
+
+.clientes h2 {
+  margin-left: 200px;
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.titulo-num-masc {
+  font-size: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+  align-items: center;
+}
+
+.texto5 h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 200px;
+}
+
+.texto5 h3 {
+  margin-left: 200px;
+  margin-right: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: 3px 0 0 #0047b3;
+}
+
+.como-usa-num-masc {
+  margin-left: 200px;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.clintes-num-masc {
+  margin-left: 180px;
+  text-decoration: underline;
+}
+
+.texto6 h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 200px;
+}
+
+.texto6 h3 {
+  margin-left: 200px;
+  margin-right: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: 3px 0 0 #0047b3;
+}
+
+.como-usa-gvc {
+  margin-left: 200px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+
+}
+
+.clintes-gvc h2 {
+  margin-left: 200px;
+}
+
+.titulo-sms h1 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto7 h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 200px;
+}
+
+.texto7 h3 {
+  margin-left: 200px;
+  margin-right: 150px;
+  box-shadow: 3px 0 0 #0047b3;
+
+}
+
+.beneficios-sms h2 {
+  text-decoration: underline;
+  margin-left: 200px;
+}
+
+.beneficios-sms h3 {
+  margin-left: 200px;
+  margin-right: 800px;
+  box-shadow: 3px 0 0 #0047b3;
+}
+
+.footer-row {
+  display: flex;
+  margin-right: 900px;
+  margin-left: 200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left-col {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+
+.footer-right-col {
+  flex-basis: 35%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+/*menu*/
+
+nav.menu-lateral {
+
+  width: 70px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #0047b3;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .7s;
+  z-index: 999;
+  position: fixed
+}
+
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir>i {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu {
+  transition: .3s;
+}
+
+ul li.ativo {
+  background-color: #4d94ff;
+}
+
+ul li.item-menu:hover {
+  background: #4d94ff;
+  border-radius: 20px;
+}
+
+
+ul li.item-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 10px;
+  line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link {
+  margin-left: 70px;
+  transition: .3s;
+  opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+  margin-left: 40px;
+  opacity: 1;
+}
+
+ul li.item-menu a .icon>i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/*fim do menu*/
+
+/*dark mode*/
+.toggle-btn span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 10px;
+  line-height: 40px;
+
+
+}
+
+.toggle-btn span:hover {
+  background: #4d94ff;
+  border-radius: 20px;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #555;
+  --title-color: #000;
+
+
+}
+
+.dark-theme {
+  --background-color: #000;
+  --text-color: #999;
+  --title-color: #fff;
+
+
+}
+
+.dark-theme h1 {
+  color: #4d94ff;
+}
+
+.dark-theme p {
+  color: white;
+}
+
+.dark-theme #oqe {
+  color: #4d94ff;
+}
+
+.dark-theme #twofa {
+  color: white;
+}
+
+.dark-theme #explicatwofa1 {
+  color: #4d94ff;
+}
+
+.dark-theme #comofunctwofa {
+  color: #4d94ff;
+
+}
+
+.dark-theme h2 {
+  color: #4d94ff;
+}
+
+.dark-theme .como-usa-num-masc {
+  color: #4d94ff;
+
+}
+
+.dark-theme #permite {
+  color: #4d94ff;
+
+}
+
+.dark-theme #permite1 {
+  color: white;
+
+}
+
+
+/*fim do dark mode*/
+
+
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 1366px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+  #dark {
+    position: relative;
+    bottom: 10px;
+  }
