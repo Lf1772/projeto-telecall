@@ -1,0 +1,307 @@
+@import url('"https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 40vw;
+  margin: auto;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 3px;
+
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro,
+.limpa {
+  width: 15vw;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.cadastro {
+  background-color: rgb(0, 143, 0);
+}
+
+.limpa {
+  background-color: rgb(95, 95, 95);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+#header {
+
+  background-size: 55% 85%;
+  background-position: top right;
+}
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.titulocadastro {
+  color: red;
+}
+
+
+p {
+  color: blue;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.endereco {
+  color: red;
+}
+
+.aaa {
+  color: black;
+}
+
+#inputmasc {
+  position: relative;
+  top: 40px;
+  right: 250px;
+}
+
+#inputfem {
+  position: relative;
+  top: 40px;
+  right: 250px;
+}
+
+#inputoutros {
+  position: relative;
+  top: 40px;
+  right: 250px;
+}
+
+#labelsexo {
+  position: relative;
+  top: 40px;
+}
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1023px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+  #inputmasc {
+    position: relative;
+    right: 5px;
+    left: 10px;
+
+  }
+
+  #inputfem {
+    position: relative;
+    right: 5px;
+    left: 10px;
+
+  }
+
+  #inputoutros {
+    position: relative;
+    right: 5px;
+    left: 10px;
+
+  }
+
+  #nome {
+    width: 160px;
+  }
+
+  #outra_data {
+    position: relative;
+    width: 250px;
+
+  }
+
+  .formCadastro p {
+    text-align: center;
+  }
+
+  label {
+    position: relative;
+    right: 100px;
+  }
+
+  input {
+    position: relative;
+    right: 100px;
+  }
+
+  #nomemae {
+    position: relative;
+    width: 210px;
+  }
+
+  #cpf {
+    position: relative;
+    width: 150px;
+  }
+
+  #telcel {
+    position: relative;
+    width: 250px;
+  }
+
+  #telfix {
+    position: relative;
+    width: 250px;
+  }
+
+  #rua {
+    position: relative;
+    width: 150px;
+  }
+
+  #num {
+    position: relative;
+    width: 200px;
+  }
+
+  #bairro {
+    position: relative;
+    width: 180px;
+  }
+
+  #estado {
+    position: relative;
+    width: 180px;
+  }
+
+  #cidade {
+    position: relative;
+    width: 180px;
+  }
+
+  #login {
+    position: relative;
+    width: 350px;
+  }
+
+  #senha {
+    position: relative;
+    width: 350px;
+  }
+
+  #confirma-senha {
+    position: relative;
+    width: 350px;
+  }
+
+  .limpa {
+    position: relative;
+    left: 60px;
+    width: 100px;
+  }
+
+  #cadastro {
+    width: 100px;
+  }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1280px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+  #inputmasc {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+  #inputfem {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+  #inputoutros {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+
+  #inputmasc {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+  #inputfem {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+  #inputoutros {
+    position: relative;
+    right: 100px;
+    margin-bottom: 25px;
+  }
+
+
+
+}
