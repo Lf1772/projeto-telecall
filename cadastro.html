@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Cadastro e Login</title>
+</head>
+
+<body>
+  <!--Header-->
+  <section id="header">
+    <div class="container">
+      <img src="logoo2.png" alt="" class="logo">
+      <div class="header-text">
+      </div>
+    </div>
+  </section>
+  <form action="" class="formCadastro">
+
+    <p>Digite os seus dados de acesso nos campos abaixo.</p><br>
+
+    <label for="nome"><strong>Nome:</strong></label>
+    <input type="text" placeholder="Digite seu nome" name="nome" id="nome" autofocus="true" minlength="15"
+      maxlength="60" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required="Preencha o campo corretamente" />
+    <br><br>
+    <label for="data"><strong>Data de Nascimento:</strong></label>
+    <input type="text" name="outra_data" id="outra_data" placeholder="Digite a Data de nascimento" maxlength="10"
+      onkeypress="mascaraData( this, event )" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+    <label id="labelsexo" for="sexo"><strong>Sexo:</strong></label> <br><br>
+    <input type="radio" id="inputmasc" name="sex" value="masc" placeholder=""
+      required="Preencha o campo corretamente" />
+    <label class="masc" for="sexo">Masculino</label> <br>
+    <input type="radio" id="inputfem" name="sex" value="fem" placeholder="" required="Preencha o campo corretamente" />
+    <label class="fem" for="sexo">Feminino</label> <br>
+    <input type="radio" id="inputoutros" name="sex" value="outros" placeholder=""
+      required="Preencha o campo corretamente" />
+    <label class="outros" for="sexo">Outros</label> <br><br>
+    <label for="nome"><strong>Nome materno:</strong></label>
+    <input type="text" id="nomemae" placeholder="Digite o nome materno" autofocus="true"
+      pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>CPF:</strong></label>
+    <input type="text" id="cpf" oninput="mascara(this)" maxlength="11" placeholder="Digite seu CPF" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Telefone Celular:</strong></label>
+    <input type="tel" id="telcel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Digite seu Telefone Celular"
+      autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Telefone Fixo:</strong></label>
+    <input type="text" id="telfix" class="form-control" id="telefone" placeholder="Digite seu Telefone Fixo"
+      maxlength="14" name="telefone" autofocus="true" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);"
+      required="Preencha o campo corretamente" /> <br><br>
+    <hr>
+
+    <h1 class="endereco">Endereço</h1>
+    <br><br>
+
+    <label for="nome"><strong>CEP:</strong></label>
+    <input type="text" id="cep" placeholder="_____-___" autofocus="true" required="Preencha o campo corretamente" />
+    <br><br>
+    <label for="nome"><strong>Rua:</strong></label>
+    <input type="text" id="rua" placeholder="Digite sua Rua" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Numero:</strong></label>
+    <input type="text" id="num" placeholder="Número da residência" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Complemento:</strong></label>
+    <input type="text" id="complemento" placeholder="(Opcional)" /> <br><br>
+    <label for="nome"><strong>Bairro:</strong></label>
+    <input type="text" id="bairro" placeholder="Digite seu Bairro" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Estado:</strong></label>
+    <input type="text" id="estado" placeholder="Digite seu Estado" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+    <label for="nome"><strong>Cidade:</strong></label>
+    <input type="text" id="cidade" placeholder="Digite sua cidade" autofocus="true"
+      required="Preencha o campo corretamente" /> <br><br>
+
+    <br><br>
+    <hr>
+    <h1 class="titulocadastro">Cadastro de Usuário</h1>
+
+    <label for="login"><strong>Login:</strong></label>
+    <input type="text" name="login" id="login" minlength="6" maxlength="6"
+      pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" autofocus="true" required="Preencha o campo corretamente"
+      placeholder="Digite seu Login (Caracteres: 6 Alfabéticos)" />
+    <label for="senha"><strong>Senha:</strong></label>
+    <input type="password" name="senha" id="senha" minlength="8" maxlength="8" autofocus="true"
+      required="Preencha o campo corretamente" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+      placeholder="Digite sua senha (Caracteres: 8 Alfabéticos)" />
+    <label for="confirma-senha"><strong>Confirmação de Senha:</strong></label>
+    <input type="password" name="confirma-senha" id="confirma-senha" autofocus="true"
+      required="Preencha o campo corretamente" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+      placeholder="Digite novamente a senha (Caracteres: 8 Alfabéticos)" />
+    <div class="botoes">
+
+      <input type="submit" onclick="return validarSenha()" onclick="alert()" onclick="alert2()" class="cadastro"
+        id="cadastro" value="Cadastrar" />
+
+
+      <!--Alerta de erro-->
+      <script>
+        function alert() {
+
+          Swal.fire({
+            icon: "error",
+            title: "Houve algum erro...",
+            text: "Preencha corretamente todos campos!",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+        }
+
+
+      </script>
+
+      <script>
+        function alert2() {
+
+          Swal.fire({
+            title: "Cadastrado com sucesso",
+            text: "Bom Trabalho!",
+            icon: "success"
+          });
+
+
+        }
+
+
+      </script>
+      <input type="reset" class="limpa" value="Limpar" />
+
+    </div>
+    <a href="login.html">Ir para a página de Login</a>
+  </form>
+  <script src="cadastro.js"></script>
+</body>
+
+</html>
