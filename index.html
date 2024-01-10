@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src=inicio></script>
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecall - Internet, Telefonia</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!--Header-->
+  <section id="header">
+    <div class="container">
+      <img src="logoo2.png" alt="" class="logo">
+      <div class="header-text">
+
+        <h2>Telefonia, celular e muito mais...</h2>
+        <span class="circle"></span>
+        <p>Solução completa de telefonia na nuvem com mais de 20 benefícios para sua empresa.</p>
+        <p>O melhor da telefonia móvel para sua empresa.</p>
+        <p>Internet Dedicada: Velocidade, Qualidade e segurança para sua empresa.</p>
+        <button class="common-btn"><a href="#about">Mais Informações</a></button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Menu de navegação-->
+
+  <nav id="sideNav">
+    <ul>
+      <li><a class="menuitens" href="#header">Início</a></li>
+      <li><a class="menuitens" href="#about">Sobre</a></li>
+      <li><a class="menuitens" href="#teams">Serviços</a></li>
+      <li><a class="menuitens" href="#offer">Ofertas</a></li>
+      <li><a class="menuitens" href="#footer">Contato</a></li>
+      <li><a href=cadastro.html><button id="botaocliente"> Área do cliente </button></a></li>
+      <div class="toggle-btn" id="btn">
+        <span>Dark</span>
+        <img src="moon.png">
+      </div>
+
+      <script>
+
+        let btn = document.getElementById("btn");
+
+
+        btn.onclick = function () {
+          document.body.classList.toggle("dark-theme");
+        }
+
+      </script>
+
+
+
+    </ul>
+  </nav>
+  <ion-icon name="menu" id="menuBtn"></ion-icon>
+
+
+
+  <!--Sobre(Quem somos)-->
+
+  <section id="about">
+    <div class="about-left-col">
+      <img class="hvr-buzz" src="cartaotelecall.png" alt="">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h1>Quem somos?</h1>
+        <span class="circle"></span>
+        <p>A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais alto padrão de
+          qualidade, velocidade e acessibilidade em soluções de comunicação. Serviços que incluem uma ampla gama de
+          valores agregados, oferecendo aos clientes operações mais produtivas, inovadoras e eficazes. Com mais de 20
+          anos de experiência na indústria global, a Telecall hoje é sinônimo de qualidade e eficiência.</p><br><br>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+        <h2>"O Mc Donald conheceu a Telecall durante os jogos Olímpicos de 2016 para um pedido urgente de um eventode
+          mídia ao vivo, quatro dia mais tarde. A Telecall foi extremamente profissional... Nós simplesmente não
+          teríamos conseguido sem a parceria da equipe Telecall. Só usaremos eles em eventos no Rio."</h2>
+        <h3>-Kathy Whalen.</h3>
+        <h4>Project Manager, Consumer events | Creative & Event Solutions | Global Business services</h4>
+      </div>
+    </div>
+  </section>
+
+  <!--Cards-->
+
+  <!--Card 1-->
+
+  <section id="teams">
+    <h1 class="tituloservicos">SOLUÇÕES INTELIGENTES PARA SUA EMPRESA!</h1>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p class="title">Internet</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Soluções de internet em Fibra com alta qualidade e disponibilidade</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Card 2-->
+
+    <div class="flip-card2">
+      <div class="flip-card-inner2">
+        <div class="flip-card-front2">
+          <p class="title2">Telefonia</p>
+        </div>
+        <div class="flip-card-back2">
+          <p>Solução internet de PABX IP na nuvem para sua telefonia fixa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Card 3-->
+
+    <div class="flip-card3">
+      <div class="flip-card-inner3">
+        <div class="flip-card-front3">
+          <p class="title3">Mobilidade</p>
+        </div>
+        <div class="flip-card-back3">
+          <p>Monte planos de celular personalizados para a sua empresa e pague apenas pelo que precisa.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!--Planos telecall-->
+
+  <section id="offer">
+    <div class="about-left-col">
+      <img class="planosimg" src="plano.png" alt="">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h1 id="tituloplano">CONHEÇA NOSSOS PLANOS</h1><br><br><br><br><br><br>
+
+        <div class="checkbox-wrapper">
+          <input checked="" type="checkbox">
+          <svg viewBox="0 0 35.6 35.6">
+            <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+          </svg>
+        </div>
+        <div class="checkbox-wrapper1">
+          <input checked="" type="checkbox">
+          <svg viewBox="0 0 35.6 35.6">
+            <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+          </svg>
+        </div>
+        <div class="checkbox-wrapper2">
+          <input checked="" type="checkbox">
+          <svg viewBox="0 0 35.6 35.6">
+            <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+          </svg>
+        </div>
+        <div class="checkbox-wrapper3">
+          <input checked="" type="checkbox">
+          <svg viewBox="0 0 35.6 35.6">
+            <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+          </svg>
+        </div>
+        <div class="checkbox-wrapper4">
+          <input checked="" type="checkbox">
+          <svg viewBox="0 0 35.6 35.6">
+            <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+            <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+            <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+          </svg>
+        </div>
+
+        <p id="plano1">PLANOS CUSTOMIZÁVEIS</p><br>
+        <p id="plano2">TRAGA SEU NÚMERO E APARELHO</p><br>
+        <p id="plano3">RECEBA SEU CHIP NA SUA EMPRESA</p><br>
+        <p id="plano4">MAIOR REDE MÓVEL DO BRASIL</p><br>
+        <p id="plano5">ATENDIMENTO DIFERENCIADO</p><br>
+        <a href="#footer"><button class="common-btn">Entre em contato</button></a>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contato-->
+
+  <section id="contact">
+    <div class="container contact-row">
+      <div class="contact-left-col">
+        <h1 id="faleconosco">Fale conosco</h1><br>
+        <h4>Para qualquer informação, dúvida ou comentário:<br><br>
+
+          (21) 3030-1010 <br><br>
+
+          0800 030 2016
+
+        </h4><br>
+        <h1 id="escritorio">Escritório</h1><br>
+        <h4>Brasil<br>
+          Centro empresarial Mario Henrique Simonsen
+          Av. das Américas, 3434 | Bloco 1, Sala 505
+          Barra da Tijuca | Rio de Janeiro, RJ<br><br>
+
+          Estados Unidos<br>
+          848 Brickell Av – Suite 1235 | Miami, Florida, USA – 33131<br><br>
+
+          Portugal<br>
+          Avenida da Liberdade nº 245, 4º piso, sala 402 | Lisboa, Portugal 1250-143<br><br>
+
+          Inglaterra<br>
+          8 Devonshire Squae, Londom EC2M 4YJ<br><br>
+
+          Contatos<br>
+          Email: suporte@telecall.com<br>
+          Tel: (21) 3030-1010</h4>
+
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+      <div class="contact-right-col">
+        <img class="contatoimg" src="suporte.png" alt="">
+        <a href='#header'><img id="topoimg" src="topo.png"></a>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Footer-->
+
+  <section id="footer">
+    <div class="container footer-row">
+      <hr>
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title">
+            <h4>Produtos</h4>
+            <a href='#offer'><small>Nossos Planos</small></a><br>
+          </div>
+          <div class="link-title">
+            <h4>Sobre Nós</h4>
+            <a href='#about'> <small>Quem somos</small></a><br>
+          </div>
+          <div class="link-title">
+            <h4>Suporte</h4>
+            <a href="#contact"><small>Contato</small></a>
+          </div>
+          <div class="link-title">
+            <h4>Serviços</h4>
+            <a href='#teams'><small>Nossos serviços</small></a><br>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-info">
+          <div class="copyright-text">
+            <small>suporte@telecall.com</small><br>
+            <small>(21) 3030-1010</small><br>
+            <small>Since 1998</small>
+          </div>
+
+          <div class="footer-logo">
+            <img src="logoo2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Social Icones-->
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" target="_blank"><img class="icons" src="facebook.png"
+        alt=""></a>
+    <a href="https://www.instagram.com/telecallbr/" target="_blank"><img class="icons" src="instagram.png" alt=""></a>
+    <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" target="_blank"><img class="icons"
+        src="whatsapp.png" alt=""></a>
+  </div>
+
+  <!-- Script ajeitar menu-->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px"
+      }
+    }
+  </script>
+</body>
+
+</html>
