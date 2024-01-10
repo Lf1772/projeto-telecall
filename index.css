@@ -1,0 +1,1505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    height: 100vh;
+    background: url(image/img-1.png) no-repeat;
+    background-size: 55% 85%;
+    background-position: top right;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo{
+    margin-top: 30px;
+    width: 100px;
+}
+.header-text{
+    max-width: 600px;
+    margin-top: 120px;
+}
+.header-text h1{
+    font-size: 34px;
+}
+.header-text p{
+    line-height: 18px;
+    font-size: 15px;
+    color: #777;
+}
+.header-text button{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.common-btn{
+    padding: 15px 20px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #2b34b6;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.common-btn:hover{
+   background-color: #e70707;
+   color: #2b34b6;
+
+}
+.common-btn a:hover{
+    color: #2b34b6;
+ }
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #2b34b6;
+    margin: 15px 0;
+}
+.line{
+    line-height: 18px;
+}
+.line-1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2b34b6;
+    display: inline-block;
+}
+.line-2{
+    width: 400px;
+    height: 2px;
+    background: #2b34b6;
+    display: inline-block;
+}
+.line-3{
+    width: 280px;
+    height: 2px;
+    background: #2b34b6;
+    display: inline-block;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background: #e70707;
+    transition: .4s ease;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: #2b34b6;
+    z-index: 2;
+    cursor: pointer;
+}
+/*-----sobre-----*/
+#about, #offer{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 80%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 700px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #787878;
+}
+/*---SESSAO DOS CARDS---*/
+#teams{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.teams-row{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.teams-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+.teams-col img{
+    width: 200px;
+}
+.teams-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.teams-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teams-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+/* plano telecall */
+
+#offer button{
+    margin: 30px 0;
+}
+
+/* Contato */
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col, .contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #2b34b6;
+    border-radius: 40px;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+/*   footer  */
+
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #2b34b6;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: #2b34b6;
+    margin-bottom: 20px;
+}
+.link-title small{
+    color: #777;
+    font-size: 13px;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/*  icones Sociais  */
+
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    width: 30px;
+    display: block;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+/* responsivo */
+@media screen and (max-width: 771px){
+    #header{
+        background: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    }
+    .header-text{
+        margin-top: 100px;
+    }
+    .header-text h1{
+        font-size: 25px;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn{
+        padding: 10px 16px;
+    }
+    .social-icons img{
+        width: 18px;
+        margin: 15px auto;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .teams-col{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .teams-btn .line{
+        display: none;
+    }
+    .course-left-col{
+        flex-basis: 100%;
+    }
+    .course-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .course-text{
+        max-width: 100%;
+    }
+    .contact-left-col, .contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-left-col{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-right-col{
+        margin-top: 50px;
+    }
+    .copyright-text, .footer-logo{
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+body.dark-mode{
+  background-color: rgb(20, 20, 20);
+  color: #e5e8e8;
+}
+
+footer.dark-mode{
+  background: #8d9797 ;
+  color: #000401;
+}
+
+.buttondm{
+  border-radius: 40px;
+  font-size: 1.5rem;
+  height: 60px;
+  width: 200px;
+  border: none;
+  background-color: #4e545c;
+  color: #e5e8e8; 
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.buttondm:hover{
+  background-color: rgb(20, 20, 20);
+}
+
+.buttondm.dark-mode{
+  background-color: #e5e8e8;
+  color: #4e545c;
+}
+
+.buttondm.dark-mode:hover{
+  background-color: #4e545c;
+color: #e5e8e8;
+}
+
+.servicos {
+width: 100px;
+height: 100px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 300px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(230, 48, 2);
+    border-radius: 1rem;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+  }
+
+  .flip-card-back {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+    transform: rotateY(180deg);
+
+  }
+
+
+
+  .tituloservicos {
+    color: red;
+    text-align: center;
+    margin-bottom: 100px;
+
+  }
+
+  .titulotelecall {
+    color: #2b34b6;
+  }
+
+.contatoimg {
+
+    border-radius: 10%;
+}
+
+#faleconosco {
+    color: red;
+}
+
+#escritorio {
+    color: #2b34b6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#topoimg {
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 800px;
+}
+
+.logo {
+    width: 15%
+}
+
+#botaocliente {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+   }
+
+   #botaocliente::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+
+   #botaocliente:hover {
+    color: #e8e8e8;
+   }
+
+   #botaocliente:hover::before {
+    width: 100%;
+   }
+
+   #plano1 {
+    position: relative;
+    font-size: 24px;
+    right: 670px;
+   }
+   #plano2 {
+    position: relative;
+    font-size: 24px;
+    right: 580px;
+   }
+   #plano3 {
+    position: relative;
+    font-size: 24px;
+    right: 560px;
+   }
+   #plano4 {
+    position: relative;
+    font-size: 24px;
+    right: 610px;
+   }
+   #plano5 {
+    position: relative;
+    font-size: 24px;
+    right: 620px;
+   }
+
+   #imgplano1 {
+    width: 20%;
+   }
+   #imgplano2 {
+    width: 20%;
+   }
+   #imgplano3 {
+    width: 20%;
+   }
+   #imgplano4 {
+    width: 20%;
+   }
+   #imgplano5 {
+    width: 20%;
+   }
+
+   .flip-card2 {
+    position: relative;
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 800px;
+    bottom: 250px;
+
+  }
+
+  .title2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front2, .flip-card-back2 {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(230, 48, 2);
+    border-radius: 1rem;
+  }
+
+  .flip-card-front2 {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+  }
+
+  .flip-card-back2 {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+    transform: rotateY(180deg);
+
+  }
+
+  .flip-card3 {
+    position: relative;
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    left: 1300px;
+    bottom: 500px;
+
+  }
+
+  .title3 {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front3, .flip-card-back3 {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(230, 48, 2);
+    border-radius: 1rem;
+  }
+
+  .flip-card-front3 {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+  }
+
+  .flip-card-back3 {
+    background: linear-gradient(120deg, bisque 60%, (10, 43, 153, 0.603) 88%,
+    (10, 43, 153, 0.603) 40%, rgba(10, 43, 153, 0.603) 48%);
+    color: rgb(230, 48, 2);
+    transform: rotateY(180deg);
+
+  }
+
+#tituloplano {
+    color: red;
+    position: relative;
+    right: 600px;
+    font-size: 32px;
+}
+
+/*  Elemento 1  */
+.checkbox-wrapper:hover .check {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 837px;
+    top: 280px;
+  }
+
+  .checkbox-wrapper .background {
+    fill: rgb(75, 50, 121);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper input[type=checkbox]:checked + svg .background {
+    fill: #421c64;
+  }
+
+  .checkbox-wrapper input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+
+  /*  Elemento 2  */
+  .checkbox-wrapper1:hover .check {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper1 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 970px;
+    top: 100px;
+    right: 870px;
+  }
+
+  .checkbox-wrapper1 .background {
+    fill: rgb(75, 50, 121);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper1 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper1 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper1 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper1 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper1 input[type=checkbox]:checked + svg .background {
+    fill: #421c64;
+  }
+
+  .checkbox-wrapper1 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper1 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+  /*  Elemento 3  */
+  .checkbox-wrapper2:hover .check {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper2 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 905px;
+    top: 160px;
+  }
+
+  .checkbox-wrapper2 .background {
+    fill: rgb(75, 50, 121);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper2 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper2 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper2 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper2 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper input[type=checkbox]:checked + svg .background {
+    fill: #421c64;
+  }
+
+  .checkbox-wrapper2 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper2 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+  /*  Elemento 4 */
+  .checkbox-wrapper3:hover .check {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper3 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 938px;
+    top: 220px;
+  }
+
+  .checkbox-wrapper3 .background {
+    fill: rgb(75, 50, 121);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper3 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper3 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper3 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper3 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper3 input[type=checkbox]:checked + svg .background {
+    fill: #421c64;
+  }
+
+  .checkbox-wrapper3 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper3 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+  /*  Elemento 5  */
+
+  .checkbox-wrapper4:hover .check {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper4 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    right: 970px;
+    top: 40px;
+  }
+
+  .checkbox-wrapper4 .background {
+    fill: rgb(75, 50, 121);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper4 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper4 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+
+  .checkbox-wrapper4 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper4 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+
+  .checkbox-wrapper4 input[type=checkbox]:checked + svg .background {
+    fill: #421c64;
+  }
+
+  .checkbox-wrapper4 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+
+  .checkbox-wrapper4 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+
+  .toggle-btn {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: center;
+    position: relative;
+    left: 30px;
+ }
+
+ .toggle-btn img {
+    width: 25px;
+    margin-left: 10px;
+ }
+
+ body {
+    background: var(--background-color);
+    color: var(--text-color);
+ }
+
+ :root {
+    --background-color: #fff;
+    --text-color: #555;
+    --title-color: #000;
+
+
+ }
+
+ .dark-theme {
+    --background-color: #000;
+    --text-color: #999;
+    --title-color: #fff;
+
+
+ }
+
+body {
+  overflow-x: hidden;
+}
+
+.menuitens:hover {
+color: #2b34b6;
+}
+
+/*dark mode */
+
+.dark-theme h2 {
+  color: red;
+}
+
+.dark-theme p {
+  color: white;
+}
+
+.dark-theme a {
+  color: white;
+}
+
+.dark-theme h1 {
+  color: red;
+}
+
+.dark-theme h3 {
+  color: white;
+}
+
+.dark-theme h4 {
+  color: white;
+}
+
+.dark-theme .common-btn {
+  color: white;
+}
+
+.dark-theme small {
+  color: red;
+}
+
+.dark-theme .icons {
+  background-color: red;
+}
+
+#topoimg {
+  transition-delay: 250ms;
+}
+
+.contatoimg:hover {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+.planosimg:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.sobreimg:hover {
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1023px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+.footer-logo {
+  position: relative;
+  right: 50px;
+}
+
+
+  #teams  {
+      flex-wrap: wrap;
+   }
+
+
+ #about h1 {
+  position: relative;
+  right: 150px;
+ }
+
+ #about p {
+  position: relative;
+  right: 60px;
+  text-align: center;
+ }
+
+ #about h2 {
+  position: relative;
+  right: 60px;
+  text-align: center;
+
+ }
+
+ #about h3 {
+  position: relative;
+  right: 60px;
+  text-align: center;
+ }
+
+ #about h4 {
+  position: relative;
+  right: 50px;
+  text-align: center;
+ }
+
+ .hvr-buzz {
+  position: relative;
+  left: 40px;
+  text-align: center;
+
+ }
+
+ .logo {
+  width: 150px;
+ }
+
+ .contatoimg {
+  position: relative;
+  width: 20px;
+  height: ;
+  right: 100px;
+ }
+
+ #offer button {
+ position: relative;
+  right: 120px;
+
+ }
+
+#footer img {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.copyright-text {
+  position: relative;
+  left: 80px;
+}
+
+.link-title {
+  position: relative;
+  left: 50px;
+}
+
+.planosimg {
+  position: relative;
+  left: 100px;
+
+}
+
+.flip-card-front {
+  position: relative;
+  right: 180px;
+
+
+}
+
+.flip-card-front:hover {
+  display: none;
+
+
+}
+
+
+
+.flip-card-front2 {
+  position: relative;
+  right: 680px;
+  top: 300px;
+
+}
+
+.flip-card-front2:hover {
+  display: none;
+}
+
+.flip-card-front3 {
+  position: relative;
+  right: 1180px;
+  top: 600px;
+}
+
+.flip-card-front3:hover {
+  display: none;
+}
+
+#contact h4 {
+  position: relative;
+  right: 20px;
+}
+
+  }
+
+  @media screen and (max-width: 1280px) {
+    /* Adicione estilos específicos para telas menores aqui */
+
+#offer p {
+  position: relative;
+  left: 50px;
+  margin-right: 200px;
+
+}
+
+#offer h1 {
+  position: relative;
+  left: 1px;
+  margin-right: 100px;
+
+}
+
+.checkbox-wrapper {
+  display: none;
+
+
+
+}
+
+.checkbox-wrapper1 {
+  display: none;
+
+
+}
+
+.checkbox-wrapper2 {
+  display: none;
+
+
+}
+
+.checkbox-wrapper3 {
+  display: none;
+
+
+}
+
+.checkbox-wrapper4 {
+  display: none;
+
+
+}
+
+
+
+
+}
+
+@media screen and (max-width: 1366px) {
+  /* Adicione estilos específicos para telas menores aqui */
+
+#plano1 {
+  position: relative;
+  right: 150px;
+
+
+}
+
+#plano2 {
+  position: relative;
+  right: 150px;
+
+
+}
+
+#plano3 {
+  position: relative;
+  right: 150px;
+
+
+}
+
+#plano4 {
+  position: relative;
+  right: 150px;
+
+
+}
+
+#plano5 {
+  position: relative;
+  right: 150px;
+
+
+}
+
+.checkbox-wrapper {
+  display: none;
+}
+
+.checkbox-wrapper1 {
+  display: none;
+}
+
+.checkbox-wrapper2 {
+  display: none;
+}
+
+.checkbox-wrapper3 {
+  display: none;
+}
+
+.checkbox-wrapper4 {
+  display: none;
+}
+
+#topoimg {
+  position: relative;
+  left: 300px;
+}
+
+.flip-card3 {
+  position: relative;
+  left: 560px;
+  top: 2px;
+
+}
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
